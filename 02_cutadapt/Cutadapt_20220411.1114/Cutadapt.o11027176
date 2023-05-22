@@ -1,0 +1,73 @@
+This is cutadapt 1.15 with Python 2.7.6
+Command line parameters: --nextseq-trim=20 -m 100 -M 100 --length 100 -a AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT -A GATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG -o Nfur_m01_cut_1.fastq.gz -p Nfur_m01_cut_2.fastq.gz Nfur_m01_1.fastq.gz Nfur_m01_2.fastq.gz
+Running on 1 core
+Trimming 2 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 0.95 s (38 us/read; 1.58 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:             25,000
+  Read 1 with adapter:                     715 (2.9%)
+  Read 2 with adapter:                     820 (3.3%)
+Pairs that were too short:              12,977 (51.9%)
+Pairs that were too long:                    0 (0.0%)
+Pairs written (passing filters):        12,023 (48.1%)
+
+Total basepairs processed:     5,050,000 bp
+  Read 1:     2,525,000 bp
+  Read 2:     2,525,000 bp
+Total written (filtered):      2,404,600 bp (47.6%)
+  Read 1:     1,202,300 bp
+  Read 2:     1,202,300 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT; Type: regular 3'; Length: 58; Trimmed: 715 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-58 bp: 5
+
+Bases preceding removed adapters:
+  A: 33.8%
+  C: 18.2%
+  G: 25.3%
+  T: 22.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	618	390.6	0	618
+5	70	24.4	0	70
+6	26	6.1	0	26
+7	1	1.5	0	1
+
+=== Second read: Adapter 2 ===
+
+Sequence: GATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG; Type: regular 3'; Length: 63; Trimmed: 820 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Bases preceding removed adapters:
+  A: 56.2%
+  C: 5.6%
+  G: 13.3%
+  T: 24.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	431	390.6	0	431
+4	192	97.7	0	192
+7	40	1.5	0	40
+8	66	0.4	0	66
+9	1	0.1	0	0 1
+10	36	0.0	1	33 3
+11	1	0.0	1	0 1
+12	52	0.0	1	50 2
+14	1	0.0	1	0 1
+
+
+**********************************************************************************************************
+
+The SCRATCHes have been SUCCESSFULLY cleaned...

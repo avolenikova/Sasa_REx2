@@ -1,0 +1,19 @@
+#!/bin/bash
+#PBS -N FastQC
+#PBS -l select=1:ncpus=4:mem=8gb:scratch_local=100gb
+#PBS -l walltime=2:00:00
+
+trap 'clean_scratch' TERM EXIT
+
+cd ${SCRATCHDIR}
+
+scp /storage/pruhonice1-ibot/home/volen_a/jani/00_rawData/Nfur_m02_1.fastq.gz ${SCRATCHDIR}
+
+module add fastQC-0.11.5
+
+fastqc Nfur_m02_1.fastq.gz
+
+rm ${SCRATCHDIR}/Nfur_m02_1.fastq.gz
+
+scp ${SCRATCHDIR}/*.html /storage/pruhonice1-ibot/home/volen_a/jani/01_fastQC/FastQC_20220411.1041 || export CLEAN_SCRATCH=true
+
