@@ -1,0 +1,12 @@
+0f184fb22d5f7940c6c624ea9016349f  00_rawData/Nfur_f01_1.fastq.gz
+845e7e42d13fd4c8b810c08b3c9bcb0d  00_rawData/Nfur_f01_2.fastq.gz
+c14544c9466bb9a48a0a2f1f949a19a2  00_rawData/Nfur_f02_1.fastq.gz
+afe932955f5bcb8a8d95cee1d1d98e52  00_rawData/Nfur_f02_2.fastq.gz
+81d417d9675fcc1fc3d9c0723de09c11  00_rawData/Nfur_f03_1.fastq.gz
+34076094f846ff7accf44adcaf7c73d9  00_rawData/Nfur_f03_2.fastq.gz
+85ff1c4636d3240c9d93b304ecdc707e  00_rawData/Nfur_m01_1.fastq.gz
+49f1fb81cd7f7fb180bfeae61f21aa19  00_rawData/Nfur_m01_2.fastq.gz
+3a38da8007702cb62b326b4adf1db92f  00_rawData/Nfur_m02_1.fastq.gz
+cd31c36d4774ce09f4a7979e5ca8ff03  00_rawData/Nfur_m02_2.fastq.gz
+226359ecba0fcc88c88e502ccab64040  00_rawData/Nfur_m03_1.fastq.gz
+b2605688206bbf591fb438c25f20a0e1  00_rawData/Nfur_m03_2.fastq.gz
